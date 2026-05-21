@@ -1642,7 +1642,6 @@ function fIcon(n){const e=n.split('.').pop().toLowerCase();return{pdf:'📄',doc
 function fSize(b){if(b<1024)return b+'B';if(b<1048576)return Math.round(b/1024)+'KB';return(b/1048576).toFixed(1)+'MB';}
 
 // CREATE MODAL
-let _currentModalType='task',ptSelectedSprints=[];
 function openCreate(mode,parentId){
   const modal=document.getElementById('create-modal');modal.classList.add('open');
   ['cmTitle','cmDesc','cmTags'].forEach(id=>document.getElementById(id).value='');
