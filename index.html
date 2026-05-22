@@ -1494,7 +1494,7 @@ async function quickAddTask(){
 }
 document.getElementById('quickTaskInput')?.addEventListener('keydown',e=>{if(e.key==='Enter')quickAddTask();});
 
-let _currentModalType='task';let ptSelectedSprints=[];
+// vars declared above
 function openCreate(mode,parentId){
   const modal=document.getElementById('create-modal');modal.classList.add('open');
   ['cmTitle','cmDesc','cmTags'].forEach(id=>document.getElementById(id).value='');
